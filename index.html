@@ -5,15 +5,29 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        button {
+            background-color: beige;
+            color: brown;
+        }
+        #reset {
+            color: darkblue;
+            background-color: darkgrey;
+        }
+        .myform {
+            background-color: whitesmoke;
+            display: grid;
+        }
+    </style>
 </head>
 <body>
-    <form>
+    <form class="myform">
         <label for="name" id="name">First Name</label>
         <input id="name" name="name" type="text">
         <button type="submit">
             <strong>Submit</strong>
         </button>
-        <input type="reset" value="Reset Form">
+        <input type="reset" value="Reset Form" id="reset">
     </form>
 </body>
 </html>
