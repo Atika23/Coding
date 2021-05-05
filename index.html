@@ -6,28 +6,27 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-        button {
-            background-color: beige;
-            color: brown;
+       .container{
+           display: grid;
+           grid-template-columns: repeat(4,1fr);
         }
-        #reset {
-            color: darkblue;
-            background-color: darkgrey;
+        div{
+            width: 100px;
+            height: 100px;
+            border: 1px solid;
+            background-color:teal;
         }
-        .myform {
-            background-color: whitesmoke;
-            display: grid;
+        .thistle{
+            background-color: thistle;
         }
     </style>
 </head>
 <body>
-    <form class="myform">
-        <label for="name" id="name">First Name</label>
-        <input id="name" name="name" type="text">
-        <button type="submit">
-            <strong>Submit</strong>
-        </button>
-        <input type="reset" value="Reset Form" id="reset">
-    </form>
+    <div class="container">
+        <div class="teal"></div>
+        <div class="thistle"></div>
+        <div class="teal"></div>
+        <div class="thistle"></div>
+    </div>
 </body>
 </html>
